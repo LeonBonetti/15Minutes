@@ -51,7 +51,7 @@ Check that your `tsconfig.json` file is as follows
   - Save the token key in some place to we use later
 
 ### Let's code
-First of all, wee need to import the libraries thar will be used, so, create a file named `src/index.ts`.
+First of all, wee need to import the libraries that will be used, so, create a file named `src/index.ts`.
 ```
 import telegram from 'node-telegram-bot-api';
 import wikipedia from 'wikipedia';
@@ -127,8 +127,7 @@ Bot.on("text", async (msg) => {
 });
 ```
 Here we only create a search function thata can make searchs on wikipedia and return the index of this result, if wee need a diferent result for this question, we only need to pass a diferent index for the function.
-On next function wee listen for text messages send to our bot, on result wee put a button that can change the index of search.
-
+On next function will listen for text messages send to your bot, on result wee put a button that can change the index of search.
 #### The callback function
 Paste this code inside your `src/index.ts`
 ```
@@ -205,7 +204,7 @@ Bot.on("callback_query", async (callback) => {
   }
 });
 ```
-Ok, although the callback function is very long to be understood, we just capture the search topic and change the index, depending on whether or not you have a next or previous page, we add the respective buttons to the message.
+Ok, although the callback function is very long, is easily to be understood, we just capture the search topic and change the index, depending on whether or not you have a next or previous page, we add the respective buttons to the message.
 
 ### Now your code need to be like this
 ```
